@@ -1,0 +1,8 @@
+---
+- name: Converge
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: "Include polydud.dev_setup"
+      ansible.builtin.include_role:
+        name: "polydud.dev_setup"
